@@ -1,6 +1,9 @@
+const bcrypt = require('bcrypt')
 const users = require('express').Router()
 const db = require('../models')
 const { User } = db
+
+// get all the users
 users.get('/', async (req,res) => {
     try {
         const foundUsers = await User.findAll()
@@ -10,7 +13,6 @@ users.get('/', async (req,res) => {
         console.log(err)
     }
 })
-
 // get a users by id
 users.get('/:id', async (req, res) => {
     try {
@@ -26,14 +28,16 @@ users.get('/:id', async (req, res) => {
 
 // CREATE NEW users
 users.post('/Users', async (req, res) => {
-    try {
-        const newUser = await User.create(req.body)
-        res.status(200).json({
-            data: newUser,
+    try{
+        let { password, ...rest } = req.body;
+        const user = await User.create({
+            ...rest,
+            password: await bcrypt.hash(password, 10)
         })
-    } 
-    catch (err) {
-        res.status(500).json("server error")
+        res.json(user)
+
+    } catch (err){
+        res.status(500).send('server error')
         console.log(err)
     }
 })
@@ -67,6 +71,4 @@ users.delete('/:id', async (req, res) => {
         console.log(err)
     }
 })
-
-
 module.exports = users

@@ -11,25 +11,21 @@ import { useNavigate } from 'react-router-dom'
         password: ''
     })
     async function handleSubmit(e) {
-        e.preventDefault()
-        navigate('/')
-        const response = await fetch(`http://localhost:4005/api/Users`, {
+        e.preventDefault();
+        navigate('/');
+    
+        const response = await fetch('http://localhost:4005/api/Users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(user)
-        })
-
-        const data = await response.json()
-
-        if (response.status === 200) {
-            
-        } else {
-            setErrorMessage(data.message)
-        }
+        });
+    
+        const data = await response.json(); 
+    
+        console.log(data);
     }
-
     return (
     <form className="main__login" onSubmit={handleSubmit}>
     <div className="row">
