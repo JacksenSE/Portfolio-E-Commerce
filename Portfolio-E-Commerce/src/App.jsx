@@ -1,20 +1,23 @@
 import './style/index.css'
 import './style/Forms.css'
+import './style/Search.css'
+import  './style/Products.css'
 import { Route, Routes, BrowserRouter} from 'react-router-dom'
 import SignUp from './pages/Signup'
-import SearchBar from './components/SearchBar'
 import LogIn from './pages/Login'
 import Home from './pages/home'
+import ShopLanguages from './pages/ShopLanguages'
 function App() {
 
   return (
     <>
-    <SearchBar/>
+    
     <BrowserRouter>
     <Routes>
     <Route path= "/" element={<Home/>}/>
       <Route path= '/Signup' element={<SignUp/>}/>
       <Route path= '/Login' element={<LogIn/>}/>
+      <Route path= '/ShopLanguages' element={<ShopLanguages/>}/>
     </Routes>
     </BrowserRouter>
     </>

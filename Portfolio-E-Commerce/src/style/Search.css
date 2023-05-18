@@ -1,0 +1,35 @@
+.Search input[type="text"] {
+  position: absolute;
+  width: 45%;
+  top: 5%;
+  left: 30%;
+  height: 3%;
+  font-family: "sans-serif";
+}
+.sale button{
+  position: absolute;
+  width: 872px;
+  height: 30px;
+  top: 78px;
+  left: 30%;
+  background-color: rgb(202, 136, 92);
+  color: white;
+  font-family: "sans-serif";
+  font-weight: bolder;
+
+}
+
+.fire img{
+  position: absolute;
+  width: 20px;
+  top: 82px;
+  left: 30%;
+
+}
+
+.fire2 img{
+  position: absolute;
+  width: 20px;
+  top: 82px;
+  left: 74%;
+}

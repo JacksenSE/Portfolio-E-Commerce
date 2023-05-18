@@ -21,7 +21,7 @@
     text-decoration: none;
   }
   
-  button {
+  .login-button button, .signup-button button {
     cursor: pointer;
     border: 0;
     border-radius: 4px;
@@ -45,7 +45,7 @@
     border: 1px solid rgba(104, 85, 224, 1);
   }
   
-  button:hover {
+  .login-button button:hover, .signup-button button:hover {
     color: white;
     
     box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
@@ -63,3 +63,9 @@
     left: 88%;
     top: 1px;
 }
+.logo img {
+  position: absolute;
+  bottom: 70%;
+  right:6;
+}
+

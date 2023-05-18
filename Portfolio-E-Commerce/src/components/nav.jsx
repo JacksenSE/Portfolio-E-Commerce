@@ -10,7 +10,8 @@ const Nav = () => {
         <div className='signup-button'>
                 <a href='/SignUp'><button style={{textDecoration:'none'}}> SignUp</button></a>
         </div>
-        <div className="logo"><img src="./src/assets/logo.png"/></div>
+
+        
         </>
     );
 };
