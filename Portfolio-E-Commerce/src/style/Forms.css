@@ -67,5 +67,6 @@
   position: absolute;
   bottom: 70%;
   right:6;
+z-index: -1;
 }
 

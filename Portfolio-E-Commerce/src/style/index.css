@@ -3,14 +3,14 @@
 position: absolute;
 z-index: 10;
 left: 410px;
-background-color: black;
+
 }
 
 .slick-arrow.slick-next{
 position: absolute;
 z-index: 10;
 left: 1380px;
-background-color: black;
+
 }
 
 .js-c {
