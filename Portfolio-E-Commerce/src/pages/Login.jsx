@@ -1,10 +1,9 @@
-import React from 'react';
-import { useState } from "react";
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function LogIn() {
   const navigate = useNavigate();
-
+  const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState({
     email: '',
     password: ''
@@ -25,43 +24,54 @@ function LogIn() {
     const data = await response.json();
 
     if (response.status === 200) {
-      // Handle successful login
+      // Set login status to true
+      setLoggedIn(true);
     } else {
       // Handle login error
       console.log(data.message);
     }
   }
 
+  const handleSignOut = () => {
+    setLoggedIn(false);
+  };
+
   return (
-    <form className="main__login" onSubmit={handleSubmit}>
-      <div className="row">
-        <div className="form-text-title">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            required
-            value={user.email}
-            onChange={e => setUser({ ...user, email: e.target.value })}
-            className="form-text-box"
-            id="email"
-            name="email"
-          />
-        </div>
-        <div className="form-text-title">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            required
-            value={user.password}
-            onChange={e => setUser({ ...user, password: e.target.value })}
-            className="form-text-box"
-            id="password"
-            name="password"
-          />
-        </div>
-      </div>
-      <input className="btn btn-primary" type="submit" value="Login" />
-    </form>
+    <>
+      {loggedIn ? (
+        <button onClick={handleSignOut}>Sign Out</button>
+      ) : (
+        <form className="main__login" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="form-text-title">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                required
+                value={user.email}
+                onChange={e => setUser({ ...user, email: e.target.value })}
+                className="form-text-box"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div className="form-text-title">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                required
+                value={user.password}
+                onChange={e => setUser({ ...user, password: e.target.value })}
+                className="form-text-box"
+                id="password"
+                name="password"
+              />
+            </div>
+          </div>
+          <input className="btn btn-primary" type="submit" value="Login" />
+        </form>
+      )}
+    </>
   );
 }
 

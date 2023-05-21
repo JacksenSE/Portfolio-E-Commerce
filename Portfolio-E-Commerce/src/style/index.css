@@ -1,3 +1,25 @@
-body{
-    background-color: blanchedalmond;
+
+.slick-arrow.slick-prev{
+position: absolute;
+z-index: 10;
+left: 410px;
+
+}
+
+.slick-arrow.slick-next{
+position: absolute;
+z-index: 10;
+left: 1380px;
+
+}
+
+.js-c {
+position: relative;
+left: 410px;
+
+}
+.Slider{
+position: relative;
+top: 100px;
+left: 80px;
 }
