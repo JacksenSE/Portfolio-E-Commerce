@@ -1,18 +1,22 @@
-import React from "react";
+import React from 'react';
 
 const Nav = () => {
+  const isLoggedIn = false; // Replace this with your authentication logic to determine if the user is logged in
 
-    return (
-        <>
-        <div className='login-button'>
-                <a href='/Login'><button style={{textDecoration:'none'}}>LogIn</button></a>
+  return (
+    <>
+      {isLoggedIn && (
+        <div className="login-button">
+          <a href="/Account">
+            <button style={{ textDecoration: 'none' }}>Account</button>
+          </a>
         </div>
-        <div className='signup-button'>
-                <a href='/SignUp'><button style={{textDecoration:'none'}}> SignUp</button></a>
-        </div>
-        <div className="logo"><img src="./src/assets/logob.svg"/></div>
-        
-        </>
-    );
+      )}
+      <div className="logo">
+        <img src="./src/assets/logob.svg" alt="Logo" />
+      </div>
+    </>
+  );
 };
+
 export default Nav;

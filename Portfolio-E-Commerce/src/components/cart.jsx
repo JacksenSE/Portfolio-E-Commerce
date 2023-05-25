@@ -1,17 +1,19 @@
 import React from 'react';
 
-const cart = ({ cartItems, removeFromCart }) => {
+const Cart = ({ cartItems, removeFromCart }) => {
   return (
     <div className='Cart'>
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <ul>
+        <ul className='Cart-items'>
           {cartItems.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} className='Cart-item'>
+              <img src={item.image} alt={item.name} /><br/>
               <span>{item.name}</span>
-              <span>{item.price}</span>
+              <span>{item.price}</span><br/>
+              
               <button onClick={() => removeFromCart(item.id)}>Remove</button>
             </li>
           ))}
@@ -21,4 +23,4 @@ const cart = ({ cartItems, removeFromCart }) => {
   );
 };
 
-export default cart;
+export default Cart;

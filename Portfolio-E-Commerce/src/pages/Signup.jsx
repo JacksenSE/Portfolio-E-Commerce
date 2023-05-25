@@ -68,6 +68,7 @@ import { useNavigate } from 'react-router-dom'
     </div>
     <input className="btn btn-primary" type="submit" value="SignUp" />
 </form>
-  )
+    )
 }
+
 export default SignUp

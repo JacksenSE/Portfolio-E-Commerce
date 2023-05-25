@@ -1,0 +1,327 @@
+.framework-card1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    top: 300px;
+  }
+  
+  .framework-card1 .ReactP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  }
+  
+  .framework-card1 .React {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .framework-card1 .price1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .framework-card1 .Description1 {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777777;
+    line-height: 1.5;
+  }
+  .framework-card2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 30%;
+    bottom: 100px;
+  }
+  
+  .framework-card2 .BootstrapP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card2 .Bootstrap {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price2 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card2 .Description2 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 49%;
+  bottom: 500px;
+  }
+  
+  .framework-card3 .NodeP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card3 .Node {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price3 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card3 .Description3 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card4 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 70%;
+    bottom: 900px;
+  }
+  
+  .framework-card4 .ExpressP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  }
+  
+  .framework-card4 .Express {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price4 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card4 .Description4 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card5 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    bottom: 850px;
+  }
+  
+  .framework-card5 .FlaskP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card5 .Flask {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price5 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card5 .Description5 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card6 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 30%;
+    bottom: 1250px;
+  }
+  
+  .framework-card6 .AngularP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card6 .Angular {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price6 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card6 .Description6 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card7 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 49%;
+    bottom: 1650px;
+  }
+  
+  .framework-card7 .jQueryP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card7 .jQuery {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price7 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card7 .Description7 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  .framework-card8 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: 70%;
+    bottom: 2050px;
+  }
+  
+  .framework-card8 .VueP {
+    position: relative;
+    width: 106%;
+    right: 6px;
+  
+  }
+  
+  .framework-card8 .Vue {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card .price8 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  }
+  
+  .framework-card8 .Description8 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777777;
+  line-height: 1.5;
+  }
+  

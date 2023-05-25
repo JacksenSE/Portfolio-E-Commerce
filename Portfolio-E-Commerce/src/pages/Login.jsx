@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function LogIn() {
@@ -9,10 +9,19 @@ function LogIn() {
     password: ''
   });
 
+  useEffect(() => {
+    // Check if the user is already logged in by looking for the JWT token in local storage
+    const token = localStorage.getItem('token');
+    if (token) {
+      setLoggedIn(true);
+    }
+  }, []);
+
+
   async function handleSubmit(e) {
     e.preventDefault();
     navigate('/');
-    
+  
     const response = await fetch('http://localhost:4005/auth/', {
       method: 'POST',
       headers: {
@@ -20,20 +29,22 @@ function LogIn() {
       },
       body: JSON.stringify(user)
     });
-
+  
     const data = await response.json();
-
+  
     if (response.status === 200) {
-      // Set login status to true
+      // Set login status to true and store the JWT token in local storage
       setLoggedIn(true);
+      localStorage.setItem('token', data.token);
     } else {
       // Handle login error
       console.log(data.message);
     }
   }
-
+  
   const handleSignOut = () => {
     setLoggedIn(false);
+    localStorage.removeItem('token'); // Remove the JWT token from local storage
   };
 
   return (
@@ -70,7 +81,9 @@ function LogIn() {
           </div>
           <input className="btn btn-primary" type="submit" value="Login" />
         </form>
+        
       )}
+      
     </>
   );
 }

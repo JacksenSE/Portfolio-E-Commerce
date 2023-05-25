@@ -12,26 +12,29 @@ import Slider from "react-slick";
     slidesToScroll: 1,
   };
   return (
+    <>
     <Slider {...settings} className="Slider">
       <div className="js-c">
-        <img src="./src/assets/Js.svg"/>
+      <a href="/ShopLanguages"><img src="./src/assets/Js.svg"/></a>
       </div>
       <div className="js-c">
-      <img src="./src/assets/React.svg"/>
+      <a href="/ShopFrameworks"><img src="./src/assets/React.svg"/></a>
       </div>
       <div className="js-c">
-      <img src="./src/assets/Python.svg"/>
+      <a href="/ShopLanguages"><img src="./src/assets/Python.svg"/></a>
       </div>
       <div className="js-c">
-      <img src="./src/assets/Bootstrap.svg"/>
+      <a href="/ShopFrameworks"><img src="./src/assets/Bootstrap.svg"/></a>
       </div>
       <div className="js-c">
-      <img src="./src/assets/CSS.svg"/>
+      <a href="/ShopFrameworks"><img src="./src/assets/CSS.svg"/></a>
       </div>
       <div className="js-c">
-      <img src="./src/assets/Java.svg"/>
+      <a href="/ShopLanguages"><img src="./src/assets/Java.svg"/></a>
       </div>
     </Slider>
+    
+    </>
   );
 }
 export default Carousel
