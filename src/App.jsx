@@ -10,7 +10,7 @@ import Home from './pages/home'
 import ShopLanguages from './pages/ShopLanguages'
 import ShopFrameworks from './pages/ShopFrameworks'
 import Account from './pages/Account'
-import Nav from './components/nav'
+
 function App() {
   return (
     <>

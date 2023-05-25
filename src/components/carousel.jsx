@@ -15,22 +15,22 @@ import Slider from "react-slick";
     <>
     <Slider {...settings} className="Slider">
       <div className="js-c">
-      <a href="/ShopLanguages"><img src="./src/assets/Js.svg"/></a>
+      <a href="/ShopLanguages"><img src="/Js.svg"/></a>
       </div>
       <div className="js-c">
-      <a href="/ShopFrameworks"><img src="./src/assets/React.svg"/></a>
+      <a href="/ShopFrameworks"><img src="/react.svg"/></a>
       </div>
       <div className="js-c">
-      <a href="/ShopLanguages"><img src="./src/assets/Python.svg"/></a>
+      <a href="/ShopLanguages"><img src="/Python.svg"/></a>
       </div>
       <div className="js-c">
-      <a href="/ShopFrameworks"><img src="./src/assets/Bootstrap.svg"/></a>
+      <a href="/ShopFrameworks"><img src="/Bootstrap.svg"/></a>
       </div>
       <div className="js-c">
-      <a href="/ShopFrameworks"><img src="./src/assets/CSS.svg"/></a>
+      <a href="/ShopFrameworks"><img src="/CSS.svg"/></a>
       </div>
       <div className="js-c">
-      <a href="/ShopLanguages"><img src="./src/assets/Java.svg"/></a>
+      <a href="/ShopLanguages"><img src="/Java.svg"/></a>
       </div>
     </Slider>
     

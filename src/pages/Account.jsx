@@ -9,7 +9,7 @@ export default function Account() {
 <div className='signup-button'>
 <a href='/SignUp'><button style={{textDecoration:'none'}}> SignUp</button></a>
 </div>
-    
+<a href='/'> <button>Back</button></a>
         </>
   )
 }

@@ -83,7 +83,7 @@ function LogIn() {
         </form>
         
       )}
-      
+      <a href='/'> <button>Back</button></a>
     </>
   );
 }
