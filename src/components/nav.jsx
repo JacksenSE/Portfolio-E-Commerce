@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Nav = () => {
-  const isLoggedIn = false; // Replace this with your authentication logic to determine if the user is logged in
+  const isLoggedIn = false;
 
   return (
     <>

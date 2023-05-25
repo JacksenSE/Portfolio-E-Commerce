@@ -10,7 +10,7 @@ function LogIn() {
   });
 
   useEffect(() => {
-    // Check if the user is already logged in by looking for the JWT token in local storage
+    
     const token = localStorage.getItem('token');
     if (token) {
       setLoggedIn(true);
@@ -33,18 +33,18 @@ function LogIn() {
     const data = await response.json();
   
     if (response.status === 200) {
-      // Set login status to true and store the JWT token in local storage
+      
       setLoggedIn(true);
       localStorage.setItem('token', data.token);
     } else {
-      // Handle login error
+    
       console.log(data.message);
     }
   }
   
   const handleSignOut = () => {
     setLoggedIn(false);
-    localStorage.removeItem('token'); // Remove the JWT token from local storage
+    localStorage.removeItem('token'); 
   };
 
   return (

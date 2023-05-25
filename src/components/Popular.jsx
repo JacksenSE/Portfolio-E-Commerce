@@ -3,7 +3,7 @@ import products from '../Seeds/products';
 
 function Popular() {
   const handleProductClick = (productId) => {
-    // Handle the click event
+    
   };
 
   return (
