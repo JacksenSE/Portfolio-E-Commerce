@@ -1,0 +1,102 @@
+
+.slick-arrow.slick-prev{
+position: absolute;
+z-index: 10;
+left: 410px;
+
+}
+
+.slick-arrow.slick-next{
+position: absolute;
+z-index: 10;
+left: 1380px;
+
+}
+
+.js-c {
+position: relative;
+left: 410px;
+
+}
+.Slider{
+position: relative;
+top: 100px;
+left: 80px;
+}
+body{
+    overflow-x: hidden;
+}
+ .slick-dots{
+    position: relative;
+    right: 50px;
+}
+
+.Popular {
+    position: absolute;
+    left: 40%;
+    top: 43%;
+    background-color: grey;
+    width: 450px; 
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family:sans-serif;
+  }
+
+  .ShopFrameworks button{
+    position: relative;
+    bottom: 315px;
+    left: 74.9%;
+  }
+  .ShopLanguage button{
+    position: relative;
+    bottom: 260px;
+    left: 20.8%;
+  }
+  .ShopFrameworks button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ShopFrameworks button:hover {
+    background-color: #23527c;
+  }
+  
+  .ShopLanguage button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .ShopLanguage button:hover {
+    background-color: #23527c;
+  }
+  
+  .root{
+    z-index: -1000;
+  }
