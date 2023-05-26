@@ -1,8 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  exclude: ['js-big-decimal']
-})
+  build: {
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
+    },
+  },
+  exclude: ['js-big-decimal'],
+});
