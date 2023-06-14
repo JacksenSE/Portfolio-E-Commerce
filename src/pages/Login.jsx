@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
 
 function LogIn() {
   const navigate = useNavigate();
@@ -83,7 +83,7 @@ function LogIn() {
         </form>
         
       )}
-      <a href='/'> <button>Back</button></a>
+      <Link to='/'> <button>Back</button></Link>
     </>
   );
 }
