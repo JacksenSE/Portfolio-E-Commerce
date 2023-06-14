@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 const Nav = () => {
   
@@ -6,9 +9,9 @@ const Nav = () => {
   return (
    <>
         <div className="login-button">
-          <a href="/Account">
+        <Link to="/Account">
             <button style={{ textDecoration: 'none' }}>Account</button>
-          </a>
+            </Link>
         </div>
     
       <div className="logo">

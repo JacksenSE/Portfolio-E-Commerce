@@ -1,13 +1,13 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Shops() {
   return (
     <>
     <div className='ShopLanguage'>
-                <a href='/ShopLanguages'><button style={{textDecoration:'none'}}> Shop Languages</button></a>
+    <Link to='/ShopLanguages'><button style={{textDecoration:'none'}}> Shop Languages</button></Link>
         </div>
         <div className='ShopFrameworks'>
-                <a href='/ShopFrameworks'><button style={{textDecoration:'none'}}> Shop Frameworks</button></a>
+        <Link to='/ShopFrameworks'><button style={{textDecoration:'none'}}> Shop Languages</button></Link>
         </div>
     </>  
 )}
